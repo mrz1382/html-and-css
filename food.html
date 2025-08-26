@@ -1,0 +1,190 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iranian Sports News</title>
+    <style>
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #008080;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .featured {
+            background: #e0f7fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+        .featured h2 {
+            color: #00695c;
+        }
+        .news-list {
+            list-style: none;
+            padding: 0;
+        }
+        .news-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-title {
+            font-size: 1.2em;
+            color: #008080;
+            margin: 0 0 5px 0;
+        }
+        .news-date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Iranian Sports News</h1>
+        <p>Latest updates from Iran's sports world</p>
+    </header>
+    <div class="container">
+        <section class="featured">
+            <h2>Featured: Team Melli Qualifies for World Cup!</h2>
+            <p>
+                Iran's national football team secured their spot in the upcoming World Cup after a thrilling victory last night. Fans across the country are celebrating this historic achievement.
+            </p>
+        </section>
+        <ul class="news-list">
+            <li class="news-item">
+                <div class="news-title">Persepolis Wins Tehran Derby</div>
+                <div class="news-date">August 14, 2025</div>
+                <div>
+                    Persepolis FC defeated Esteghlal in a dramatic Tehran Derby, with a last-minute goal sealing the win.
+                </div>
+            </li>
+            <li class="news-item">
+                <div class="news-title">Iranian Wrestlers Shine in Asian Championships</div>
+                <div class="news-date">August 13, 2025</div>
+                <div>
+                    Iranian wrestlers brought home 5 gold medals from the Asian Championships, continuing their dominance in the sport.
+                </div>
+            </li>
+            <li class="news-item">
+                <div class="news-title">Volleyball Team Advances to Finals</div>
+                <div class="news-date">August 12, 2025</div>
+                <div>
+                    Iran's volleyball team reached the finals after a strong performance against Japan.
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Cooking Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff7043;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px 20px;
+            background: #ff7043;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .recipe {
+            margin-top: 30px;
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Cooking Recipes</h1>
+        <p>Ask for any recipe, and AI will help you cook!</p>
+    </header>
+    <div class="container">
+        <input type="text" id="foodInput" placeholder="Enter a dish (e.g., Ghormeh Sabzi)">
+        <button onclick="getRecipe()">Get Recipe</button>
+        <div class="recipe" id="recipeResult"></div>
+    </div>
+    <script>
+        // Mock AI function (replace with real API call)
+        function getRecipe() {
+            const food = document.getElementById('foodInput').value;
+            const recipeDiv = document.getElementById('recipeResult');
+            if (!food) {
+                recipeDiv.innerHTML = "<em>Please enter a dish name.</em>";
+                return;
+            }
+            // Simulate AI response
+            recipeDiv.innerHTML = `<strong>Recipe for ${food}:</strong><br>
+            <ul>
+                <li>Ingredients: ...</li>
+                <li>Instructions: ...</li>
+            </ul>
+            <em>(This is a mock response. Connect to an AI API for real recipes!)</em>`;
+        }
+    </script>
+</body>
+</html>
+
